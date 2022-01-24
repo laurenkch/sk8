@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    background-image: url("./../images/bg.jpg");
+}
+.fa-facebook-f, .fa-rss,.fa-twitter,.fa-youtube {
+    padding: 5px;
+}
+.fa {
+    line-height: 2em;
+}
+.fa-facebook-f {
+    background-color: rgb(70, 81, 153);
+    color:rgb(120,129,182);
+}
+.fa-rss {
+    background-color: rgb(213,142,26);
+    color: rgb(226,171,84);
+}
+.fa-twitter {
+    background-color: rgb(102,137,201);
+    color: rgb(142	165	214	);
+}
+.fa-youtube {
+    background-color: rgb(194,31,23);
+    color: rgb(210	97	91	);
+}
+.ratio {
+    --bs-aspect-ratio: 25%;
+}
+.col {
+    border:1px solid black;
+}

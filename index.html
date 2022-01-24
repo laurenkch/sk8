@@ -6,9 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1a336b1c17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+    <header>
+
+        <div class="container">
+            <div class="icons row">
+                    <a class="col offset-8"aria-current="page" href="">Subscribe</a>
+                    <div class="col row">
+                            <a class="col" aria-current="page" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="col" aria-current="page" href=""><i class="fas fa-rss"></i></a>
+                            <a class="col" aria-current="page" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="col" aria-current="page" href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+            </div>
+            <nav class="row nav">
+                <ul class="nav">
+                <li class="nav-item col">
+                    <a class="nav-link active" aria-current="page" href="#sk8t-news">Sk8t News</a>
+                </li>
+                <li class="nav-item col">
+                    <a class="nav-link active" aria-current="page" href="#skateboarders">Skateboarders</a>
+                </li>
+                <li class="nav-item col">
+                    <a class="nav-link active" aria-current="page" href="#board-design">Board Design</a>
+                </li>
+                <li class="nav-item col">
+                    <a class="nav-link active" aria-current="page" href="#contact-us">Contact Us</a>
+                </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <img class="col ratio" src="images/top-image.png">
+        </div>
+        <div class="row" id="sk8t-news">
+            <article class="col">
+                <h2>Tony Hawk Foundation</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus earum neque expedita tempora? Mollitia harum quasi adipisci, reiciendis aliquid, nam quibusdam magnam ratione voluptatem beatae saepe nisi incidunt soluta explicabo?</p>
+                <a href="">Read More</a>
+            </article>
+            <article class="col">
+                <h2>Rodney Mullen:Pop an ollie and innovate! (TED Talk)</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus earum neque expedita tempora? Mollitia harum quasi adipisci, reiciendis aliquid, nam quibusdam magnam ratione voluptatem beatae saepe nisi incidunt soluta explicabo?</p>
+                <a href="">Read More</a>
+            </article>
+            <article class="col">
+                <h2>Ray Barbee Talks</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus earum neque expedita tempora? Mollitia harum quasi adipisci, reiciendis aliquid, nam quibusdam magnam ratione voluptatem beatae saepe nisi incidunt soluta explicabo?</p>
+                <a href="">Read More</a>
+            </article>
+            <div class="row" id="skateboarders">
+                <div class="col">Skateboarders</div>
+                <div class="col">
+                    <img src="images/sk8er-4.png">
+                    <p>Lance Mountain</p>
+                </div>
+                <div class="col">
+                    <img src="images/sk8er-3.png">
+                    <p>Rodney Mullen</p>
+                </div>
+                <div class="col">
+                    <img src="images/sk8er-2.png">
+                    <p>Tommy Guerrero</p>
+                </div>
+                <div class="col">
+                    <img src="images/sk8er-1.png">
+                    <p>Steve Caballero</p>
+                </div>
+            </div>
+            <div class="row" id="board-design">
+                <img src="images/sk8-3.png" alt="skateboard with panda" class="col">
+                <img src="images/sk8-4.png" alt="skateboard with monkey" class="col">
+                <img src="images/sk8-5.png" alt="skateboard reading &quot;message board&quot; with a raised middle finger" class="col">
+                <img src="images/sk8-6.png" alt="skateboard reading &quot;Good Mood&quot;" class="col">
+                <img src="images/sk8-7.png" alt="skateboard reading &quot;hungover&quot;" class="col">
+                <img src="images/sk8-8.png" alt="shecks branded skateboard" class="col">
+                <img src="images/sk8-9.png" alt="Jesus fernandez skateboard" class="col">
+                <img src="images/sk8-10.png" alt="Rob dyrdek skateboard with an alien" class="col">
+                <img src="images/sk8-2.png" alt="Elephant skateboard" class="col">
+                <img src="images/sk8-1.png" alt="skateboard with a skull and sword" class="col">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>
+                    Contact Us for More Information
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit laudantium a dolorem eius sed maxime commodi corrupti labore aperiam ratione reprehenderit, iure voluptatibus. Similique iste quae odio neque nobis.</p>
+
+            </div>
+            <div class="col" id="contact-us">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="email" class="form-control" id="name" placeholder="NAME">
+                  </div>
+                  <div class="mb-3">
+                    <label for="emailAddress" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="emailAddress" placeholder="EMAIL">
+                  </div>
+                  <div class="mb-3">
+                    <label for="yourMessage" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="yourMessage" placeholder="Your Message" rows="3"></textarea>
+                  </div>
+            </div>
+        </div>
+    </div>    
 </body>
 </html>
