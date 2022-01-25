@@ -39,7 +39,7 @@
             </nav>
         </header>
         <div class="top">
-            <img class="grid" src="./images/grid.png" alt="grid">
+            <img class="grid opacity-25" src="./images/grid.png" alt="grid">
             <img src="./images/peralta-logo.png" alt="peralta logo">
         </div>
         <div class="row" id="sk8t-news">
@@ -61,12 +61,13 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus earum neque expedita tempora? Mollitia harum quasi adipisci, reiciendis aliquid, nam quibusdam magnam ratione...</p>
                 <a href="">Read More</a>
             </article>
+        </div>
             <div id="skateboarders">
                 <h2 class="text-uppercase" >Skateboarders</h2>
                 <!-- <div class="arrow">&#9656;</div> -->
                 <div class="pictures row  align-items-center g-3">
                     <div class="col-8">
-                    <div class="row">
+                    <div class="row g-2">
                         <div class="col-6 lance text-uppercase text-center">
                         <p>Lance Mountain</p>
                         </div>
@@ -82,42 +83,52 @@
                             <p>Tommy Guerrero</p>
                         </div>
                     </div>
-                </div>
-            <div class="row" id="board-design">
-                <img src="images/sk8-3.png" alt="skateboard with panda" class="col">
-                <img src="images/sk8-4.png" alt="skateboard with monkey" class="col">
-                <img src="images/sk8-5.png" alt="skateboard reading &quot;message board&quot; with a raised middle finger" class="col">
-                <img src="images/sk8-6.png" alt="skateboard reading &quot;Good Mood&quot;" class="col">
-                <img src="images/sk8-7.png" alt="skateboard reading &quot;hungover&quot;" class="col">
-                <img src="images/sk8-8.png" alt="shecks branded skateboard" class="col">
-                <img src="images/sk8-9.png" alt="Jesus fernandez skateboard" class="col">
-                <img src="images/sk8-10.png" alt="Rob dyrdek skateboard with an alien" class="col">
-                <img src="images/sk8-2.png" alt="Elephant skateboard" class="col">
-                <img src="images/sk8-1.png" alt="skateboard with a skull and sword" class="col">
             </div>
-        </div>
-        <div class="row">
+            <div id="board-design">
+                <div class="row boards">
+                    <img src="images/sk8-3.png" alt="skateboard with panda" class="col-auto">
+                    <img src="images/sk8-4.png" alt="skateboard with monkey" class="col-auto">
+                    <img src="images/sk8-5.png" alt="skateboard reading &quot;message board&quot; with a raised middle finger" class="col-auto">
+                    <img src="images/sk8-6.png" alt="skateboard reading &quot;Good Mood&quot;" class="col">
+                    <img src="images/sk8-7.png" alt="skateboard reading &quot;hungover&quot;" class="col-auto">
+                    <img src="images/sk8-8.png" alt="shecks branded skateboard" class="col-auto">
+                    <img src="images/sk8-9.png" alt="Jesus fernandez skateboard" class="col-auto">
+                    <img src="images/sk8-10.png" alt="Rob dyrdek skateboard with an alien" class="col-auto">
+                    <img src="images/sk8-2.png" alt="Elephant skateboard" class="col-auto">
+                    <img src="images/sk8-1.png" alt="skateboard with a skull and sword" class="col-auto">
+                </div>
+            </div>
+        <div class="row my-5 contact">
             <div class="col">
-                <h2>
+                <h2 class="m-3">
                     Contact Us for More Information
                 </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit laudantium a dolorem eius sed maxime commodi corrupti labore aperiam ratione reprehenderit, iure voluptatibus. Similique iste quae odio neque nobis.</p>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit laudantium a dolorem eius sed maxime commodi corrupti labore aperiam ratione reprehenderit, iure voluptatibus. Similique iste quae odio neque nobis.</p>
 
             </div>
-            <div class="col" id="contact-us">
-                <div class="mb-3">
+            <form class="col m-3" id="contact-us">
+                <div class="mb-3 row">
+                    <div class="col-12 mb-3">
                     <label for="name" class="form-label">Name</label>
                     <input type="email" class="form-control" id="name" placeholder="NAME">
-                  </div>
+                    </div>
+                <div class="col-12">
                   <div class="mb-3">
                     <label for="emailAddress" class="form-label">Email Address</label>
                     <input type="email" class="form-control" id="emailAddress" placeholder="EMAIL">
                   </div>
+                </div>
+                <div class="col-12">
                   <div class="mb-3">
                     <label for="yourMessage" class="form-label">Your Message</label>
-                    <textarea class="form-control" id="yourMessage" placeholder="Your Message" rows="3"></textarea>
+                    <textarea class="form-control" id="yourMessage" placeholder="YOUR MESSAGE" rows="3"></textarea>
                   </div>
+                </div>
+                <div class="col offset-6 d-grid">
+                  <button type="button" class="btn btn-primary text-uppercase">Submit</button>
+                </div>
             </div>
+            </form>
         </div>
     </div>   
 </body>

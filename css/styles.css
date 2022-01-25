@@ -49,10 +49,6 @@ nav li {
     margin: 10px 0;
 }
 
-.top img:first-child {
-    opacity: 25%;
-}
-
 .top img:last-child {
     width: auto;
     max-height: 300px;
@@ -127,27 +123,30 @@ article a {
 }
 
 .lance, .rodney {
-    height: 240px;
+    height: 272px;
 }
 
 .lance {
     background-image: url(./../images/sk8er-4.png);
-    background-position: -60px -11px;
+    background-position: -120px;
+    background-size: 500px;
 }
 .rodney {
     background-image: url(./../images/sk8er-3.png);
     background-position: 0px -8px;
+    background-size: 500px;
 }
 .tommy {
     background-image: url(./../images/sk8er-2.png);
-    background-size: 373px;
-    height: 490px;
+    background-size: 384px;
+    height: 551px;
+
 }
-.steve p {
+.steve {
     background-image: url(./../images/sk8er-1.png);
-    background-size: 761px;
-    background-position: 4px;
-    height: 240px;
+    background-size: 768px;
+    background-position: 5px;
+    height: 272px;
 }
 
 .steve, .tommy, .lance, .rodney {
@@ -155,10 +154,26 @@ article a {
     border: 7px white solid;
 }
 
-#board-design img{
-    transform: rotate(90deg);
+#board-design {
+    margin-top: 20px;
+    background-color: rgb(253, 253, 253);
+    padding: 20px 0;
+    /* transform: rotate(90deg) translatex(50%); */
 }
 
+
+.contact {
+    background-color: rgb(253, 253, 253);
+}
+.btn-primary {
+    background-color: rgb(198,0,23);
+    border-color: rgb(198,0,23);
+    border-radius: .1rem;
+}
+
+div label {
+    display: hidden;
+}
 
 @media (min-width: 768px) {
     .container-md {
