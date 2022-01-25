@@ -117,15 +117,51 @@ article h2 {
 article a {
     margin: 10px;
 }
-.skateboarders .row .col {
-    border: 5px white;
+
+#skateboarders col, col-8, col-6, col-12 {
+    border: 7px solid white;
 }
-.col img {
-    max-width: 330px;
+
+#skateboarders p {
+    color: white;
 }
+
+.lance, .rodney {
+    height: 240px;
+}
+
+.lance {
+    background-image: url(./../images/sk8er-4.png);
+    background-position: -60px -11px;
+}
+.rodney {
+    background-image: url(./../images/sk8er-3.png);
+    background-position: 0px -8px;
+}
+.tommy {
+    background-image: url(./../images/sk8er-2.png);
+    background-size: 373px;
+    height: 490px;
+}
+.steve p {
+    background-image: url(./../images/sk8er-1.png);
+    background-size: 761px;
+    background-position: 4px;
+    height: 240px;
+}
+
+.steve, .tommy, .lance, .rodney {
+    font-size: 3em;
+    border: 7px white solid;
+}
+
+#board-design img{
+    transform: rotate(90deg);
+}
+
 
 @media (min-width: 768px) {
     .container-md {
-        max-width: 1100px;
+        max-width: 1200px;
     }
 }
