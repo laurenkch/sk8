@@ -2,31 +2,130 @@ body {
     background-color: black;
     background-image: url("./../images/bg.jpg");
 }
+
 .fa-facebook-f, .fa-rss,.fa-twitter,.fa-youtube {
-    padding: 5px;
+    font-size: 2em;
+    line-height: 1.5em;
 }
-.fa {
-    line-height: 2em;
-}
-.fa-facebook-f {
+
+.facebook{
     background-color: rgb(70, 81, 153);
     color:rgb(120,129,182);
 }
-.fa-rss {
+.rss {
     background-color: rgb(213,142,26);
     color: rgb(226,171,84);
 }
-.fa-twitter {
+.twitter {
     background-color: rgb(102,137,201);
     color: rgb(142	165	214	);
 }
-.fa-youtube {
+
+.youtube {
     background-color: rgb(194,31,23);
     color: rgb(210	97	91	);
 }
-.ratio {
-    --bs-aspect-ratio: 25%;
+
+header a {
+    color: white;
+    text-decoration: none;
 }
-.col {
-    border:1px solid black;
+
+nav li {
+    background-color: rgb(197,0,24);
+    margin: 5px;
+}
+.nav-link {
+    color: white;
+}
+
+.top {
+    background-image: url(./../images/top-image.png);
+    background-position: -150px -150px;
+    border: 10px solid white;
+    position: relative;
+    max-height: 360px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.top img:first-child {
+    opacity: 25%;
+}
+
+.top img:last-child {
+    width: auto;
+    max-height: 300px;
+    margin: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#sk8t-news article{
+    background: white;
+    margin: 5px;
+}
+
+#skateboarders {
+    position: relative;    
+}
+#skateboarders h2 {
+    position: absolute;
+    top:10px;
+    left:-231px;
+    background: rgb(198, 0, 23);
+    padding: 26px 4px;
+    color: white;
+    font-size: 1.5em;
+    box-shadow: 2px 2px gray;
+}
+/* .arrow {
+    position: absolute;
+    left: -27px;
+    top: -10px;
+    width: 0; 
+    width: 100px;
+    height: 100px;
+    color:rgb(198, 0, 23);
+    text-shadow: 0 0 20px gray;
+    transform: scale(5,10);
+  } */
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 2px 2px gray;
+    min-height: 100%;
+
+}
+article time {
+    margin: 10px;
+    font-style: italic;
+}
+article p {
+    margin: 10px;
+    flex-grow: 1;
+}
+
+article a {
+    text-align: center;
+}
+article h2 {
+    margin: 10px;
+}
+article a {
+    margin: 10px;
+}
+.skateboarders .row .col {
+    border: 5px white;
+}
+.col img {
+    max-width: 330px;
+}
+
+@media (min-width: 768px) {
+    .container-md {
+        max-width: 1100px;
+    }
 }

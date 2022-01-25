@@ -10,19 +10,18 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-
-        <div class="container">
-            <div class="icons row">
-                    <a class="col offset-8"aria-current="page" href="">Subscribe</a>
-                    <div class="col row">
-                            <a class="col" aria-current="page" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="col" aria-current="page" href=""><i class="fas fa-rss"></i></a>
-                            <a class="col" aria-current="page" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="col" aria-current="page" href=""><i class="fab fa-youtube"></i></a>
+    <div class="container-md">
+        <header>
+            <div class="row">
+                    <a class="col align-self-center offset-7 text-uppercase" aria-current="page" href="">Subscribe</a>
+                    <div class="col icons text-center row g-0">
+                            <a class="col facebook" aria-current="page" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="col rss" aria-current="page" href=""><i class="fas fa-rss"></i></a>
+                            <a class="col twitter" aria-current="page" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="col youtube" aria-current="page" href=""><i class="fab fa-youtube"></i></a>
                     </div>
             </div>
-            <nav class="row nav">
+            <nav class="row nav text-center">
                 <ul class="nav">
                 <li class="nav-item col">
                     <a class="nav-link active" aria-current="page" href="#sk8t-news">Sk8t News</a>
@@ -38,46 +37,50 @@
                 </li>
                 </ul>
             </nav>
-        </div>
-    </header>
-    <div class="container">
-        <div class="row">
-            <img class="col ratio" src="images/top-image.png">
+        </header>
+        <div class="top">
+            <img class="grid" src="./images/grid.png" alt="grid">
+            <img src="./images/peralta-logo.png" alt="peralta logo">
         </div>
         <div class="row" id="sk8t-news">
             <article class="col">
                 <h2>Tony Hawk Foundation</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus earum neque expedita tempora? Mollitia harum quasi adipisci, reiciendis aliquid, nam quibusdam magnam ratione voluptatem beatae saepe nisi incidunt soluta explicabo?</p>
+                <time class="font-italic font-weight-light" datetime="2013-10-10">October 10, 2013</time>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus earum neque expedita tempora? Mollitia harum quasi adipisci, reiciendis aliquid, nam quibusdam magnam ratione voluptatem beatae...</p>
                 <a href="">Read More</a>
             </article>
             <article class="col">
                 <h2>Rodney Mullen:Pop an ollie and innovate! (TED Talk)</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus earum neque expedita tempora? Mollitia harum quasi adipisci, reiciendis aliquid, nam quibusdam magnam ratione voluptatem beatae saepe nisi incidunt soluta explicabo?</p>
+                <time class="font-italic font-weight-light" datetime="2013-10-03">March 10, 2013</time>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus earum neque expedita tempora? Mollitia harum quasi adipisci, reiciendis aliquid, nam quibusdam magnam ratione voluptatem...</p>
                 <a href="">Read More</a>
             </article>
             <article class="col">
-                <h2>Ray Barbee Talks</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus earum neque expedita tempora? Mollitia harum quasi adipisci, reiciendis aliquid, nam quibusdam magnam ratione voluptatem beatae saepe nisi incidunt soluta explicabo?</p>
+                <h2>Ray Barbee Talks `Ban This`</h2>
+                <time class="font-italic font-weight-light" datetime="2013-04-10">October 4, 2013</time>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus earum neque expedita tempora? Mollitia harum quasi adipisci, reiciendis aliquid, nam quibusdam magnam ratione...</p>
                 <a href="">Read More</a>
             </article>
-            <div class="row" id="skateboarders">
-                <div class="col">Skateboarders</div>
-                <div class="col">
-                    <img src="images/sk8er-4.png">
-                    <p>Lance Mountain</p>
-                </div>
-                <div class="col">
-                    <img src="images/sk8er-3.png">
-                    <p>Rodney Mullen</p>
-                </div>
-                <div class="col">
-                    <img src="images/sk8er-2.png">
-                    <p>Tommy Guerrero</p>
-                </div>
-                <div class="col">
-                    <img src="images/sk8er-1.png">
-                    <p>Steve Caballero</p>
-                </div>
+            <div id="skateboarders">
+                <h2 class="text-uppercase" >Skateboarders</h2>
+                <!-- <div class="arrow">&#9656;</div> -->
+                <div class ="row">
+                    <div class="col">
+                        <img src="images/sk8er-4.png">
+                        <p>Lance Mountain</p>
+                    </div>
+                    <div class="col">
+                        <img src="images/sk8er-3.png">
+                        <p>Rodney Mullen</p>
+                    </div>
+                    <div class="col">
+                        <img src="images/sk8er-2.png">
+                        <p>Tommy Guerrero</p>
+                    </div>
+                    <div class="col">
+                        <img src="images/sk8er-1.png">
+                        <p>Steve Caballero</p>
+                    </div>
             </div>
             <div class="row" id="board-design">
                 <img src="images/sk8-3.png" alt="skateboard with panda" class="col">
@@ -115,6 +118,6 @@
                   </div>
             </div>
         </div>
-    </div>    
+    </div>   
 </body>
 </html>
