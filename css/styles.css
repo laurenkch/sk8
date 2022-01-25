@@ -171,6 +171,11 @@ article a {
     border-radius: .1rem;
 }
 
+.end-symbols {
+    background-color: rgb(79,79,79);
+    color: rgb(123, 123, 123);
+}
+
 div label {
     display: hidden;
 }
