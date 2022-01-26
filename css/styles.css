@@ -17,6 +17,9 @@ a {
 a:hover {
     color: #202020;
 }
+.btn-primary:hover {
+    background-color: #202020;
+}
 ul {
     list-style: none;
     padding-left: unset;
@@ -28,15 +31,18 @@ ul {
     border-left: 3px dotted white;
     text-align: center;
 }
+.icons p {
+    margin: 0;
+}
 
 .fa-facebook-f, .fa-rss,.fa-twitter,.fa-youtube {
     font-size: 2em;
     line-height: 1.5em;
 }
 
-.facebook{
+.facebook {
     background-color: rgb(70, 81, 153);
-    padding: 2px;
+    padding: 5px 2px 5px 0px;
     margin: 0 3px 3px 3px;
     box-shadow: 2px 2px gray;
 }
@@ -45,7 +51,7 @@ ul {
 }
 .rss {
     background-color: rgb(213,142,26);
-    padding: 2px;
+    padding: 5px 2px;
     margin: 3px;
     box-shadow: 2px 2px gray;
 }
@@ -54,7 +60,7 @@ ul {
 }
 .twitter {
     background-color: rgb(102,137,201);
-    padding: 2px;
+    padding: 5px 2px;
     margin: 3px;
     box-shadow: 2px 2px gray;
 }
@@ -63,7 +69,7 @@ ul {
 }
 .youtube {
     background-color: rgb(194,31,23);
-    padding: 2px;
+    padding: 5px 0px 5px 2px;
     margin: 3px 3px 0 3px;
     box-shadow: 2px 2px gray;
 }
@@ -88,6 +94,7 @@ header > .row {
     display:flex;
     align-items: center;
     justify-content: center;
+    margin: 5px 0;
 }
 .nav-item:hover {
     color: #202020;
@@ -122,17 +129,18 @@ header > .row {
 }
 
 #skateboarders {
+    margin: 5px 0;
     position: relative;    
+    text-align: center;
 }
 #skateboarders h2 {
-    position: absolute;
-    top:10px;
-    left:-231px;
     background: rgb(198, 0, 23);
     padding: 26px 4px;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.4em;
     box-shadow: 2px 2px gray;
+    position: relative;
+    width: 100%
 }
 /* .arrow {
     position: absolute;
@@ -152,7 +160,6 @@ article {
     background-color: rgb(253, 253, 253);
     box-shadow: 2px 2px gray;
     min-height: 100%;
-
 }
 article time {
     margin: 10px;
@@ -166,6 +173,7 @@ article p {
 article a {
     text-align: center;
     margin: 10px;
+    color:rgb(198, 0, 23);
 }
 article h2 {
     margin: 10px;
@@ -179,26 +187,20 @@ article h2 {
 .sk8ters img {
     border: 7px white solid;
     margin-top: 5px;
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
 }
 
 .sk8ters span {
     font-size: 3em;
     position: absolute;
-    top: 50px;
-    left: 0;
+    top: 25%;
+    left: 10%;
     z-index: 10;
     color: white;
 }
 
-.sk8ters:nth-of-type(3) span{
-    top: 50px;
-    left: 10px;
-}
-
-/* .sk8ters span:last-of-type {
-    top: 50px;
-    left: 0;
-} */
 #board-design {
     margin: 20px 0;
     background-color: rgb(253, 253, 253);
@@ -208,6 +210,9 @@ article h2 {
 .skateboard-img {
     justify-content: center;
     align-items: center;
+}
+.skateboard-img img {
+    padding: 5px 19%;
 }
 
 .contact {
@@ -224,6 +229,10 @@ article h2 {
     color: rgb(123, 123, 123);
     line-height: 0.5em;
     font-size: 0.75em;
+    width: 10%;
+}
+.end-symbols p {
+    margin: 0;
 }
 
 div label {
@@ -235,6 +244,10 @@ div label {
         max-width: 1040px;
     }
 
+    .row > li {
+    margin: 0 0;
+    }
+
     .skateboard-img {
     transform-origin: top left;
     transform: rotate(90deg) translateY(-30%) translateX(-10%);
@@ -242,7 +255,29 @@ div label {
     width: 65px;
     justify-content: center;
     align-items: center;
+    padding: 0;
+}
+
+    #skateboarders h2 {
+        position: absolute;
+        top:10px;
+        left: -210px;
+        width: auto;
+    }
+  
+    .sk8ters img {
+        width: auto;
+        height: auto;
+        max-height: none;
     }
 
+    .sk8ters span {
+    top: 50px;
+    left: 0;
+    }
 
+    .sk8ters:nth-of-type(3) span{
+    top: 33%;
+    left: 20%;
+    }
 }
