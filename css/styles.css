@@ -1,6 +1,32 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: black;
     background-image: url("./../images/bg.jpg");
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #202020;
+}
+ul {
+    list-style: none;
+    padding-left: unset;
+}
+
+.icons {
+    padding: 0 10px;
+    margin: 10px 0;
+    border-left: 3px dotted white;
+    text-align: center;
 }
 
 .fa-facebook-f, .fa-rss,.fa-twitter,.fa-youtube {
@@ -10,30 +36,61 @@ body {
 
 .facebook{
     background-color: rgb(70, 81, 153);
+    padding: 2px;
+    margin: 0 3px 3px 3px;
+    box-shadow: 2px 2px gray;
+}
+.facebook a {
     color:rgb(120,129,182);
 }
 .rss {
     background-color: rgb(213,142,26);
-    color: rgb(226,171,84);
+    padding: 2px;
+    margin: 3px;
+    box-shadow: 2px 2px gray;
+}
+.rss a {
+    color: rgb(223	172	104	);
 }
 .twitter {
     background-color: rgb(102,137,201);
+    padding: 2px;
+    margin: 3px;
+    box-shadow: 2px 2px gray;
+}
+.twitter a  {
     color: rgb(142	165	214	);
 }
-
 .youtube {
     background-color: rgb(194,31,23);
+    padding: 2px;
+    margin: 3px 3px 0 3px;
+    box-shadow: 2px 2px gray;
+}
+.youtube a {
     color: rgb(210	97	91	);
 }
 
-header a {
+a {
     color: white;
     text-decoration: none;
 }
 
 nav li {
     background-color: rgb(197,0,24);
-    margin: 5px;
+    height: 50px;
+
+}
+header > .row {
+    --bs-gutter-x: 0;
+}
+.row > li {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item:hover {
+    color: #202020;
 }
 .nav-link {
     color: white;
@@ -46,16 +103,18 @@ nav li {
     position: relative;
     max-height: 360px;
     overflow: hidden;
-    margin: 10px 0;
+    width: 101.5%;
+    margin: 10px -8px;
+    padding: 0;
 }
 
 .top img:last-child {
     width: auto;
     max-height: 300px;
-    margin: 60px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
 }
 #sk8t-news article{
     background: white;
@@ -106,61 +165,50 @@ article p {
 
 article a {
     text-align: center;
+    margin: 10px;
 }
 article h2 {
     margin: 10px;
 }
-article a {
-    margin: 10px;
+
+.sk8ters {
+    position: relative;
+    padding: 0;
+    overflow: auto;
+}
+.sk8ters img {
+    border: 7px white solid;
+    margin-top: 5px;
 }
 
-#skateboarders col, col-8, col-6, col-12 {
-    border: 7px solid white;
-}
-
-#skateboarders p {
+.sk8ters span {
+    font-size: 3em;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 10;
     color: white;
 }
 
-.lance, .rodney {
-    height: 272px;
+.sk8ters:nth-of-type(3) span{
+    top: 50px;
+    left: 10px;
 }
 
-.lance {
-    background-image: url(./../images/sk8er-4.png);
-    background-position: -120px;
-    background-size: 500px;
-}
-.rodney {
-    background-image: url(./../images/sk8er-3.png);
-    background-position: 0px -8px;
-    background-size: 500px;
-}
-.tommy {
-    background-image: url(./../images/sk8er-2.png);
-    background-size: 384px;
-    height: 551px;
-
-}
-.steve {
-    background-image: url(./../images/sk8er-1.png);
-    background-size: 768px;
-    background-position: 5px;
-    height: 272px;
-}
-
-.steve, .tommy, .lance, .rodney {
-    font-size: 3em;
-    border: 7px white solid;
-}
-
+/* .sk8ters span:last-of-type {
+    top: 50px;
+    left: 0;
+} */
 #board-design {
-    margin-top: 20px;
+    margin: 20px 0;
     background-color: rgb(253, 253, 253);
-    padding: 20px 0;
-    /* transform: rotate(90deg) translatex(50%); */
+    padding: 20px;
 }
 
+.skateboard-img {
+    justify-content: center;
+    align-items: center;
+}
 
 .contact {
     background-color: rgb(253, 253, 253);
@@ -184,6 +232,17 @@ div label {
 
 @media (min-width: 768px) {
     .container-md {
-        max-width: 1200px;
+        max-width: 1040px;
     }
+
+    .skateboard-img {
+    transform-origin: top left;
+    transform: rotate(90deg) translateY(-30%) translateX(-10%);
+    height: 260px;
+    width: 65px;
+    justify-content: center;
+    align-items: center;
+    }
+
+
 }

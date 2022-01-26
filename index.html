@@ -4,120 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sk8t</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/1a336b1c17.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <div class="container-md">
-        <header>
             <div class="row">
-                    <a class="col align-self-center offset-7 text-uppercase" aria-current="page" href="">Subscribe</a>
-                    <div class="col icons text-center row g-0">
-                            <a class="col facebook" aria-current="page" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="col rss" aria-current="page" href=""><i class="fas fa-rss"></i></a>
-                            <a class="col twitter" aria-current="page" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="col youtube" aria-current="page" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="col align-self-center offset-md-6 text-uppercase" aria-current="page" href="">Subscribe</a>
+                    <div class="col icons text-center row">
+                        <div class="col facebook">
+                            <a aria-current="page" href=""><p><i class="fab fa-facebook-f"></i></p></a>
+                        </div>
+                        <div class="col rss">
+                            <a aria-current="page" href=""><p><i class="fas fa-rss"></i></p></a>
+                        </div>
+                        <div class="col twitter">
+                            <a aria-current="page" href=""><p><i class="fab fa-twitter"></i></p></a>
+                        </div>
+                        <div class="col youtube">
+                            <a aria-current="page" href=""><p><i class="fab fa-youtube"></i></p></a>
+                        </div>
                     </div>
             </div>
-            <nav class="row nav text-center">
-                <ul class="nav">
-                <li class="nav-item col">
-                    <a class="nav-link active" aria-current="page" href="#sk8t-news">Sk8t News</a>
+            <nav>
+                <ul class="row">
+                <li class="col-12 col-lg mx-2">
+                    <a class="" aria-current="page" href="#sk8t-news">&ndash;<span class="mx-4">Sk8t News</span>&ndash;</a>
                 </li>
-                <li class="nav-item col">
-                    <a class="nav-link active" aria-current="page" href="#skateboarders">Skateboarders</a>
+                <li class="col-12 col-lg mx-2">
+                    <a class="" aria-current="page" href="#skateboarders">&ndash;<span class="mx-4">Skateboarders</span>&ndash;</a>
                 </li>
-                <li class="nav-item col">
-                    <a class="nav-link active" aria-current="page" href="#board-design">Board Design</a>
+                <li class="nav-item col-12 col-lg mx-2">
+                    <a class="" aria-current="page" href="#board-design">&ndash;<span class="mx-4">Board Design&ndash;</span></a>
                 </li>
-                <li class="nav-item col">
-                    <a class="nav-link active" aria-current="page" href="#contact-us">Contact Us</a>
+                <li class="col-12 col-lg mx-2">
+                    <a class="active" aria-current="page" href="#contact-us">&ndash;<span class="mx-4">Contact Us</span>&ndash;</a>
                 </li>
                 </ul>
             </nav>
-        </header>
         <div class="top">
-            <img class="grid opacity-25" src="./images/grid.png" alt="grid">
+            <img class="grid-pic opacity-25" src="./images/grid.png" alt="grid picture">
             <img src="./images/peralta-logo.png" alt="peralta logo">
         </div>
         <div class="row" id="sk8t-news">
-            <article class="col">
-                <h2>Tony Hawk Foundation</h2>
+            <article class="col-12 col-lg">
+                <h2>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h2>
                 <time class="font-italic font-weight-light" datetime="2013-10-10">October 10, 2013</time>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus earum neque expedita tempora? Mollitia harum quasi adipisci, reiciendis aliquid, nam quibusdam magnam ratione voluptatem beatae...</p>
                 <a href="">Read More</a>
             </article>
-            <article class="col">
+            <article class="col-12 col-lg">
                 <h2>Rodney Mullen:Pop an ollie and innovate! (TED Talk)</h2>
-                <time class="font-italic font-weight-light" datetime="2013-10-03">March 10, 2013</time>
+                <time class="font-italic font-weight-light" datetime="2013-03-10">March 10, 2013</time>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus earum neque expedita tempora? Mollitia harum quasi adipisci, reiciendis aliquid, nam quibusdam magnam ratione voluptatem...</p>
                 <a href="">Read More</a>
             </article>
-            <article class="col">
+            <article class="col-12 col-lg">
                 <h2>Ray Barbee Talks `Ban This`</h2>
                 <time class="font-italic font-weight-light" datetime="2013-04-10">October 4, 2013</time>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus earum neque expedita tempora? Mollitia harum quasi adipisci, reiciendis aliquid, nam quibusdam magnam ratione...</p>
                 <a href="">Read More</a>
             </article>
         </div>
-            <div id="skateboarders">
+            <section id="skateboarders">
                 <h2 class="text-uppercase" >Skateboarders</h2>
                 <!-- <div class="arrow">&#9656;</div> -->
-                <div class="pictures row  align-items-center g-3">
-                    <div class="col-8">
-                    <div class="row g-2">
-                        <div class="col-6 lance text-uppercase text-center">
-                        <p>Lance Mountain</p>
+                <div class="pictures row align-items-center">
+                    <div class="col-12 col-md-8">
+                    <div class="row">
+                        <div class="col-12 col-md-6 sk8ters text-uppercase text-center">
+                        <img src="./images/sk8er-4 copy.png" alt="Lance Mountain">
+                        <span>Lance Mountain</span>
                         </div>
-                        <div class="col-6 rodney text-uppercase text-center">
-                            <p>Rodney Mullen</p>
+                        <div class="col-12 col-md-6 sk8ters text-uppercase text-center">
+                        <img src="./images/sk8er-3 copy.png" alt="Rodney Mullen">
+                        <span>Rodney Mullen</span>
                         </div>
-                        <div class="col-12 steve text-uppercase text-center">
-                            <p>Steve Caballero</p>
-                        </div>
-                    </div>
-                    </div>
-                        <div class="col tommy text-uppercase text-center">
-                            <p>Tommy Guerrero</p>
+                        <div class="col-12 sk8ters text-uppercase text-center">
+                        <img src="./images/sk8er-1 copy.png" alt="Steve Caballero">
+                        <span>Steve Caballero</span>
                         </div>
                     </div>
-            </div>
-            <div id="board-design">
-                <div class="row boards">
-                    <img src="images/sk8-3.png" alt="skateboard with panda" class="col-auto">
-                    <img src="images/sk8-4.png" alt="skateboard with monkey" class="col-auto">
-                    <img src="images/sk8-5.png" alt="skateboard reading &quot;message board&quot; with a raised middle finger" class="col-auto">
-                    <img src="images/sk8-6.png" alt="skateboard reading &quot;Good Mood&quot;" class="col">
-                    <img src="images/sk8-7.png" alt="skateboard reading &quot;hungover&quot;" class="col-auto">
-                    <img src="images/sk8-8.png" alt="shecks branded skateboard" class="col-auto">
-                    <img src="images/sk8-9.png" alt="Jesus fernandez skateboard" class="col-auto">
-                    <img src="images/sk8-10.png" alt="Rob dyrdek skateboard with an alien" class="col-auto">
-                    <img src="images/sk8-2.png" alt="Elephant skateboard" class="col-auto">
-                    <img src="images/sk8-1.png" alt="skateboard with a skull and sword" class="col-auto">
+                    </div>
+                        <div class="col-12 col-md-4 sk8ters text-uppercase text-center">
+                            <img src="./images/sk8er-2 copy.png" alt="Tommy Guerrero">
+                            <span>Tommy Guerrero</span>
+                        </div>
+                    </div>
+                </section>
+            <section id="board-design" class="row boards justify-content-around gx-0">
+                <div class="col skateboard-img">
+                    <img src="images/sk8-3.png" alt="skateboard with panda">
                 </div>
-            </div>
-        <div class="row my-5 contact">
-            <div class="col text-center">
+                <div class="col skateboard-img">
+                    <img src="images/sk8-4.png" alt="skateboard with monkey">
+                </div>
+                <div class="col skateboard-img">
+                    <img src="images/sk8-5.png" alt="skateboard reading &quot;message board&quot; with a raised middle finger">
+                </div>
+                <div class="col skateboard-img">
+                    <img src="images/sk8-6.png" alt="skateboard reading &quot;Good Mood&quot;">
+                </div>
+                <div class="col skateboard-img">
+                    <img src="images/sk8-7.png" alt="skateboard reading &quot;hungover&quot;">
+                </div>
+                <div class="col skateboard-img">
+                    <img src="images/sk8-8.png" alt="shecks branded skateboard">
+                </div>
+                <div class="col skateboard-img">
+                    <img src="images/sk8-9.png" alt="Jesus fernandez skateboard">
+                </div>
+                <div class="col skateboard-img">
+                    <img src="images/sk8-10.png" alt="Rob dyrdek skateboard with an alien">
+                </div>
+                <div class="col skateboard-img">
+                    <img src="images/sk8-2.png" alt="Elephant skateboard">
+                </div>
+                <div class="col skateboard-img">
+                    <img src="images/sk8-1.png" alt="skateboard with a skull and sword">
+                </div>
+            </section>
+        <section class="row my-3 contact gx-0">
+            <div class="col-12 col-md text-center">
                 <h2 class="m-3">
                     Contact Us for More Information
                 </h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit laudantium a dolorem eius sed maxime commodi corrupti labore aperiam ratione reprehenderit, iure voluptatibus. Similique iste quae odio neque nobis.</p>
                 <div class="text-center d-flex justify-content-start align-items-center my-4">
-                    <a class="end-symbols px-2 py-0 m-1" aria-current="page" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="end-symbols px-2 py-0 m-1" aria-current="page" href=""><i class="fas fa-rss"></i></a>
-                    <a class="end-symbols px-2 py-0 m-1" aria-current="page" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="end-symbols px-2 py-0 m-1" aria-current="page" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="end-symbols px-2 py-0 m-1" aria-current="page" href=""><p><i class="fab fa-facebook-f"></i></p></a>
+                    <a class="end-symbols px-2 py-0 m-1" aria-current="page" href=""><p><i class="fas fa-rss"></i></p></a>
+                    <a class="end-symbols px-2 py-0 m-1" aria-current="page" href=""><p><i class="fab fa-twitter"></i></p></a>
+                    <a class="end-symbols px-2 py-0 m-1" aria-current="page" href=""><p><i class="fab fa-youtube"></i></p></a>
                 </div>
             </div>
-            <form class="col m-3" id="contact-us">
+            <form class="col-12 col-md p-3" id="contact-us">
                 <div class="mb-3 row">
                     <div class="col-12 mb-3">
                     <label for="name" class="form-label">Name</label>
                     <input type="email" class="form-control" id="name" placeholder="NAME">
                     </div>
-                <div class="col-12">
+                <div class="col-12 col-lg">
                   <div class="mb-3">
                     <label for="emailAddress" class="form-label">Email Address</label>
                     <input type="email" class="form-control" id="emailAddress" placeholder="EMAIL">
@@ -134,7 +162,7 @@
                 </div>
             </div>
             </form>
-        </div>
+        </section>
     </div>   
 </body>
 </html>
